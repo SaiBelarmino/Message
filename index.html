@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Message</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Welcome!</h1>
+
+    <input type="text" id="name" placeholder="Enter your name">
+
+    <button onclick="nextStep()">Continue</button>
+
+    <div id="question" class="hidden">
+        <h2 id="greeting"></h2>
+        <p>Do you want to see the surprise?</p>
+
+        <button onclick="showImage()">Yes</button>
+        <button onclick="sayNo()">No</button>
+    </div>
+
+    <div id="result" class="hidden">
+        <img src="your-image.jpg" alt="Surprise">
+    </div>
+
+    <p id="message"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
